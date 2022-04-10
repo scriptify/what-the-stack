@@ -1,10 +1,11 @@
 import * as React from 'react';
 
-import Layout from '@/components/layout/Layout';
-import Seo from '@/components/Seo';
-import LandingHero from '@/components/Hero';
-import PainPoints from '@/components/PainPoints';
 import Authority from '@/components/Authority';
+import LandingHero from '@/components/Hero';
+import Layout from '@/components/layout/Layout';
+import PainPoints from '@/components/PainPoints';
+import Seo from '@/components/Seo';
+import Solutions from '@/components/Solutions';
 import TheProcess from '@/components/TheProcess';
 
 export default function HomePage() {
@@ -18,6 +19,7 @@ export default function HomePage() {
         <PainPoints />
         <Authority />
         <TheProcess />
+        <Solutions />
       </main>
     </Layout>
   );

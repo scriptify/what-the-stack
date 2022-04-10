@@ -53,7 +53,7 @@ export default function PainPoints() {
           </h2>
           <p className='mt-2 text-lg text-gray-500'>
             Lasst uns zusammen euren Entwicklungsprozess wieder auf
-            Höchstleistungen bringen
+            Höchstleistung bringen
           </p>
         </div>
       </div>
