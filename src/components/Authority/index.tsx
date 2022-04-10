@@ -1,21 +1,27 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { RiShieldUserFill as PersonIcon } from 'react-icons/ri';
+import Image from 'next/image';
+import { MdWavingHand as HandIcon } from 'react-icons/md';
+
+import meImage from '../../../public/images/me.png';
 
 export default function Authority() {
   return (
-    <div className='relative bg-white'>
-      <div className='h-56 bg-indigo-600 sm:h-72 lg:absolute lg:left-0 lg:h-full lg:w-1/2'>
-        <img
-          className='h-full w-full object-cover'
-          src='https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80'
-          alt='Support team'
-        />
+    <div className='relative mt-24 bg-white'>
+      <div className='m:h-72 h-56 lg:absolute lg:left-0 lg:h-full lg:w-1/2'>
+        <div className='relative h-full w-full'>
+          <Image
+            src={meImage}
+            layout='fill'
+            objectFit='contain'
+            alt='Maximilian Torggler'
+          />
+        </div>
       </div>
       <div className='relative mx-auto max-w-7xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16'>
         <div className='mx-auto max-w-2xl lg:mr-0 lg:ml-auto lg:w-1/2 lg:max-w-none lg:pl-10'>
           <div>
-            <div className='flex h-12 w-12 items-center justify-center rounded-md bg-indigo-500 text-white'>
-              <PersonIcon className='h-6 w-6' aria-hidden='true' />
+            <div className='flex h-12 w-12 items-center justify-center rounded-md bg-indigo-600 text-white'>
+              <HandIcon className='h-6 w-6' aria-hidden='true' />
             </div>
           </div>
           <h2 className='mt-6 text-3xl font-extrabold text-gray-900 sm:text-4xl'>
@@ -25,8 +31,8 @@ export default function Authority() {
             Ein Fullstack Software Developer mit{' '}
             {new Date().getFullYear() - 2016}+ Jahren professioneller Erfahrung.
             Ich habe zwei Tech Startups mitgegründet und vielen weiteren
-            Unternehmen dabei geholfen, skalierbare Webanwendungen mit
-            cutting-edge Technologien zu entwickeln.
+            Unternehmen dabei geholfen, skalierbare React Anwendungen mit
+            modernen Technologien zu entwickeln.
             <br />
             <br />
             Nun gebe ich mein Wissen weiter, und helfe dabei, den Jungle an

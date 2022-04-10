@@ -14,13 +14,17 @@
   }
   ```
 */
-import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
+import Image from 'next/image';
+import { Fragment } from 'react';
 import {
-  RiMenuFill as MenuIcon,
-  RiCloseFill as XIcon,
   RiArrowRightSLine as ChevronRightIcon,
+  RiCloseFill as XIcon,
+  RiMenuFill as MenuIcon,
 } from 'react-icons/ri';
+
+import logoLarge from '../../../public/images/logo_font_long.png';
+import logoSmall from '../../../public/images/logo_font_short.png';
 
 const navigation = [
   { name: 'Product', href: '#' },
@@ -31,189 +35,231 @@ const navigation = [
 
 export default function LandingHero() {
   return (
-    <div className='relative overflow-hidden'>
-      <Popover as='header' className='relative'>
-        <div className='bg-gray-900 pt-6'>
-          <nav
-            className='relative mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6'
-            aria-label='Global'
+    <div className='relative overflow-hidden bg-gray-50'>
+      <div
+        className='hidden sm:absolute sm:inset-y-0 sm:block sm:h-full sm:w-full'
+        aria-hidden='true'
+      >
+        <div className='relative mx-auto h-full max-w-7xl'>
+          <svg
+            className='absolute right-full translate-y-1/4 translate-x-1/4 transform lg:translate-x-1/2'
+            width={404}
+            height={784}
+            fill='none'
+            viewBox='0 0 404 784'
           >
-            <div className='flex flex-1 items-center'>
-              <div className='flex w-full items-center justify-between md:w-auto'>
-                <a href='#'>
-                  <span className='sr-only'>Workflow</span>
-                  <img
-                    className='h-8 w-auto sm:h-10'
-                    src='https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg'
-                    alt=''
-                  />
-                </a>
-                <div className='-mr-2 flex items-center md:hidden'>
-                  <Popover.Button className='focus-ring-inset inline-flex items-center justify-center rounded-md bg-gray-900 p-2 text-gray-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-white'>
-                    <span className='sr-only'>Open main menu</span>
-                    <MenuIcon className='h-6 w-6' aria-hidden='true' />
-                  </Popover.Button>
+            <defs>
+              <pattern
+                id='f210dbf6-a58d-4871-961e-36d5016a0f49'
+                x={0}
+                y={0}
+                width={20}
+                height={20}
+                patternUnits='userSpaceOnUse'
+              >
+                <rect
+                  x={0}
+                  y={0}
+                  width={4}
+                  height={4}
+                  className='text-gray-200'
+                  fill='currentColor'
+                />
+              </pattern>
+            </defs>
+            <rect
+              width={404}
+              height={784}
+              fill='url(#f210dbf6-a58d-4871-961e-36d5016a0f49)'
+            />
+          </svg>
+          <svg
+            className='absolute left-full -translate-y-3/4 -translate-x-1/4 transform md:-translate-y-1/2 lg:-translate-x-1/2'
+            width={404}
+            height={784}
+            fill='none'
+            viewBox='0 0 404 784'
+          >
+            <defs>
+              <pattern
+                id='5d0dd344-b041-4d26-bec4-8d33ea57ec9b'
+                x={0}
+                y={0}
+                width={20}
+                height={20}
+                patternUnits='userSpaceOnUse'
+              >
+                <rect
+                  x={0}
+                  y={0}
+                  width={4}
+                  height={4}
+                  className='text-gray-200'
+                  fill='currentColor'
+                />
+              </pattern>
+            </defs>
+            <rect
+              width={404}
+              height={784}
+              fill='url(#5d0dd344-b041-4d26-bec4-8d33ea57ec9b)'
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div className='relative pt-6 pb-16 sm:pb-24'>
+        <Popover>
+          <div className='mx-auto max-w-7xl px-4 sm:px-6'>
+            <nav
+              className='relative flex items-center justify-between sm:h-10 md:justify-center'
+              aria-label='Global'
+            >
+              <div className='flex flex-1 items-center md:absolute md:inset-y-0 md:left-0'>
+                <div className='flex w-full items-center justify-between md:w-auto'>
+                  <a href='#'>
+                    <span className='sr-only'>what the stack</span>
+                    {/* <SVGLogo className='h-44 w-auto' /> */}
+                    <div className='relative h-24 w-56'>
+                      <Image
+                        objectFit='contain'
+                        layout='fill'
+                        src={logoLarge}
+                        alt='what the stack'
+                      />
+                    </div>
+                  </a>
+                  <div className='-mr-2 flex items-center md:hidden'>
+                    <Popover.Button className='inline-flex items-center justify-center rounded-md bg-gray-50 p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500'>
+                      <span className='sr-only'>Open main menu</span>
+                      <MenuIcon className='h-6 w-6' aria-hidden='true' />
+                    </Popover.Button>
+                  </div>
                 </div>
               </div>
-              <div className='hidden space-x-8 md:ml-10 md:flex'>
+              <div className='hidden md:flex md:space-x-10'>
                 {navigation.map((item) => (
                   <a
                     key={item.name}
                     href={item.href}
-                    className='text-base font-medium text-white hover:text-gray-300'
+                    className='font-medium text-gray-500 hover:text-gray-900'
                   >
                     {item.name}
                   </a>
                 ))}
               </div>
-            </div>
-            <div className='hidden md:flex md:items-center md:space-x-6'>
-              <a
-                href='#'
-                className='text-base font-medium text-white hover:text-gray-300'
-              >
-                Log in
-              </a>
-              <a
-                href='#'
-                className='inline-flex items-center rounded-md border border-transparent bg-gray-600 px-4 py-2 text-base font-medium text-white hover:bg-gray-700'
-              >
-                Start free trial
-              </a>
-            </div>
-          </nav>
-        </div>
-
-        <Transition
-          as={Fragment}
-          enter='duration-150 ease-out'
-          enterFrom='opacity-0 scale-95'
-          enterTo='opacity-100 scale-100'
-          leave='duration-100 ease-in'
-          leaveFrom='opacity-100 scale-100'
-          leaveTo='opacity-0 scale-95'
-        >
-          <Popover.Panel
-            focus
-            className='absolute inset-x-0 top-0 z-10 origin-top transform p-2 transition md:hidden'
-          >
-            <div className='overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-black ring-opacity-5'>
-              <div className='flex items-center justify-between px-5 pt-4'>
-                <div>
-                  <img
-                    className='h-8 w-auto'
-                    src='https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg'
-                    alt=''
-                  />
-                </div>
-                <div className='-mr-2'>
-                  <Popover.Button className='inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-600'>
-                    <span className='sr-only'>Close menu</span>
-                    <XIcon className='h-6 w-6' aria-hidden='true' />
-                  </Popover.Button>
-                </div>
+              <div className='hidden md:absolute md:inset-y-0 md:right-0 md:flex md:items-center md:justify-end'>
+                <span className='inline-flex rounded-md shadow'>
+                  <a
+                    href='#'
+                    className='inline-flex items-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white hover:bg-indigo-700'
+                  >
+                    Call buchen
+                  </a>
+                </span>
               </div>
-              <div className='pt-5 pb-6'>
-                <div className='space-y-1 px-2'>
+            </nav>
+          </div>
+
+          <Transition
+            as={Fragment}
+            enter='duration-150 ease-out'
+            enterFrom='opacity-0 scale-95'
+            enterTo='opacity-100 scale-100'
+            leave='duration-100 ease-in'
+            leaveFrom='opacity-100 scale-100'
+            leaveTo='opacity-0 scale-95'
+          >
+            <Popover.Panel
+              focus
+              className='absolute inset-x-0 top-0 z-10 origin-top-right transform p-2 transition md:hidden'
+            >
+              <div className='overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-black ring-opacity-5'>
+                <div className='flex items-center justify-between px-5 pt-4'>
+                  <div>
+                    <Image
+                      src={logoSmall}
+                      alt='what the stack'
+                      className='h-8 w-auto'
+                    />
+                  </div>
+                  <div className='-mr-2'>
+                    <Popover.Button className='inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500'>
+                      <span className='sr-only'>Close menu</span>
+                      <XIcon className='h-6 w-6' aria-hidden='true' />
+                    </Popover.Button>
+                  </div>
+                </div>
+                <div className='px-2 pt-2 pb-3'>
                   {navigation.map((item) => (
                     <a
                       key={item.name}
                       href={item.href}
-                      className='block rounded-md px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-50'
+                      className='block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900'
                     >
                       {item.name}
                     </a>
                   ))}
                 </div>
-                <div className='mt-6 px-5'>
-                  <a
-                    href='#'
-                    className='block w-full rounded-md bg-indigo-600 py-3 px-4 text-center font-medium text-white shadow hover:bg-indigo-700'
-                  >
-                    Start free trial
-                  </a>
-                </div>
-                <div className='mt-6 px-5'>
-                  <p className='text-center text-base font-medium text-gray-500'>
-                    Existing customer?{' '}
-                    <a href='#' className='text-gray-900 hover:underline'>
-                      Login
-                    </a>
-                  </p>
-                </div>
+                <a
+                  href='#'
+                  className='block w-full bg-indigo-600 px-5 py-3 text-center font-medium text-white hover:bg-indigo-700'
+                >
+                  Call buchen
+                </a>
               </div>
-            </div>
-          </Popover.Panel>
-        </Transition>
-      </Popover>
-
-      <main>
-        <div className='bg-gray-900 pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 lg:pb-14'>
-          <div className='mx-auto max-w-7xl lg:px-8'>
-            <div className='lg:grid lg:grid-cols-2 lg:gap-8'>
-              <div className='mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:flex lg:items-center lg:px-0 lg:text-left'>
-                <div className='lg:py-24'>
-                  <a
-                    href='#'
-                    className='inline-flex items-center rounded-full bg-black p-1 pr-2 text-white hover:text-gray-200 sm:text-base lg:text-sm xl:text-base'
-                  >
-                    <span className='rounded-full bg-indigo-500 px-3 py-0.5 text-xs font-semibold uppercase leading-5 tracking-wide text-white'>
-                      Ebook
-                    </span>
-                    <span className='ml-4 text-sm'>
-                      10 Build tools to watch in 2022
-                    </span>
-                    <ChevronRightIcon
-                      className='ml-2 h-5 w-5 text-gray-500'
-                      aria-hidden='true'
-                    />
-                  </a>
-                  <h1 className='mt-4 text-4xl font-extrabold tracking-tight text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl'>
-                    <span className='block'>
-                      Moderne React Softwarearchitektur
-                    </span>
-                    <span className='block text-indigo-400'>
-                      für Dein A-Team
-                    </span>
-                  </h1>
-                  <p className='mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl'>
-                    Schluss mit ewig langen Release Cycles, umständlichen
-                    Developer Tools und klobiger User Experience! Sorge dafür,
-                    dass sich Dein Development Team auf das fokussiert, was es
-                    am besten kann: Shippen von neuen Features.
-                  </p>
-                  <div className='mt-10 sm:mt-12'>
-                    <form action='#' className='sm:mx-auto sm:max-w-xl lg:mx-0'>
-                      <div className='sm:flex'>
-                        <div className=''>
-                          <button
-                            type='submit'
-                            className='block w-full rounded-md bg-indigo-500 py-3 px-4 font-medium text-white shadow hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-300 focus:ring-offset-2 focus:ring-offset-gray-900'
-                          >
-                            Call buchen
-                          </button>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
+            </Popover.Panel>
+          </Transition>
+        </Popover>
+        <main className='mx-auto max-w-7xl px-4 sm:mt-24'>
+          <div className='text-center'>
+            <a href='#' className='inline-flex space-x-4'>
+              <span className='rounded bg-indigo-50 px-2.5 py-1 text-xs font-semibold uppercase tracking-wide text-indigo-600'>
+                Neuer Artikel
+              </span>
+              <span className='inline-flex items-center space-x-1 text-sm font-medium text-indigo-600'>
+                <span>Taming the beast: CSS Solutions for React</span>
+                <ChevronRightIcon className='h-5 w-5' aria-hidden='true' />
+              </span>
+            </a>
+          </div>
+          <div className='mt-8 text-center'>
+            <h1 className='text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl'>
+              <span className='block xl:inline'>
+                Moderne React Softwarearchitektur
+              </span>
+              <br />
+              <span className='block text-indigo-600 xl:inline'>
+                für dein A-Team
+              </span>
+            </h1>
+            <p className='mx-auto mt-3 max-w-md text-base text-gray-500 sm:text-lg md:mt-5 md:max-w-3xl md:text-xl'>
+              Schluss mit ewig langen Release Cycles, umständlichen Developer
+              Tools und klobiger User Experience! Sorge dafür, dass sich Dein
+              Development Team auf das fokussiert, was es am besten kann:
+              Shippen von neuen Features.
+            </p>
+            <div className='mx-auto mt-5 max-w-md sm:flex sm:justify-center md:mt-8'>
+              <div className='rounded-md shadow'>
+                <a
+                  href='#'
+                  className='flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 md:py-4 md:px-10 md:text-lg'
+                >
+                  Gratis Call buchen
+                </a>
               </div>
-              <div className='mt-12 -mb-16 sm:-mb-48 lg:relative lg:m-0'>
-                <div className='mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0'>
-                  {/* Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ */}
-                  <img
-                    className='w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none'
-                    src='https://tailwindui.com/img/component-images/cloud-illustration-indigo-400.svg'
-                    alt=''
-                  />
-                </div>
-              </div>
+              {/* <div className='mt-3 rounded-md shadow sm:mt-0 sm:ml-3'>
+                <a
+                  href='#'
+                  className='flex w-full items-center justify-center rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium text-indigo-600 hover:bg-gray-50 md:py-4 md:px-10 md:text-lg'
+                >
+                  Live demo
+                </a>
+              </div> */}
             </div>
           </div>
-        </div>
-
-        {/* More main page content here... */}
-      </main>
+        </main>
+      </div>
     </div>
   );
 }

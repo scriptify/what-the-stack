@@ -1,11 +1,11 @@
 /* This example requires Tailwind CSS v2.0+ */
 import {
-  RiServerFill as ServerIcon,
-  RiPhoneFindLine as CallIcon,
-  RiFileCodeFill as CodeIcon,
   RiBarricadeFill as LegacyCodeIcon,
-  RiTeamFill as HandoffIcon,
+  RiFileCodeFill as CodeIcon,
   RiMedal2Fill as PerformanceIcon,
+  RiPhoneFindLine as CallIcon,
+  RiServerFill as ServerIcon,
+  RiTeamFill as HandoffIcon,
 } from 'react-icons/ri';
 
 const features = [
@@ -51,7 +51,7 @@ export default function TheProcess() {
     <div className='relative bg-white py-16 sm:py-24 lg:py-32'>
       <div className='mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8'>
         <h2 className='text-base font-semibold uppercase tracking-wider text-indigo-600'>
-          So funktioniert's
+          So funktioniert&apos;s
         </h2>
         <p className='mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl'>
           In zwei Wochen zum perfekten React Techstack
