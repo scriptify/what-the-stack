@@ -27,10 +27,10 @@ import logoLarge from '../../../public/images/logo_font_long.png';
 import logoSmall from '../../../public/images/logo_font_short.png';
 
 const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
+  { name: 'Home', href: '#' },
+  { name: 'Impressum', href: '#' },
+  { name: 'Blog', href: '#' },
+  { name: 'Fullstack Safari 🌴', href: '#' },
 ];
 
 export default function LandingHero() {
