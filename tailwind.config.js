@@ -18,7 +18,21 @@ module.exports = {
       fontFamily: {
         primary: ['Inter', ...fontFamily.sans],
       },
-      colors: {},
+      colors: {
+        secondary: {
+          default: '#D36728',
+          50: '#F3D3C0',
+          100: '#F0C7AE',
+          200: '#E9AE8C',
+          300: '#E3966A',
+          400: '#DC7E48',
+          500: '#D36728',
+          600: '#A4501F',
+          700: '#753916',
+          800: '#46220D',
+          900: '#160B04',
+        },
+      },
       keyframes: {
         flicker: {
           '0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100%': {
