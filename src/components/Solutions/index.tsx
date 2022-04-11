@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import { RiCheckFill as CheckIcon } from 'react-icons/ri';
 
-import techIllustration from '../../../public/images/success.png';
+import techIllustration from '../../../public/images/success_alt.png';
 
 const features = [
   {
@@ -52,11 +52,14 @@ const features = [
 export default function Solutions() {
   return (
     <div className='mt-8 bg-white'>
+      <h2 className='mb-8 text-center text-2xl font-black uppercase tracking-wide text-gray-900'>
+        <span>Die neue Ära</span>
+        <span className='block text-indigo-600'>
+          modernen Webapp Developments
+        </span>
+      </h2>
       <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:px-8'>
         <div>
-          <h2 className='mb-4 text-center text-base font-semibold uppercase tracking-wide text-indigo-600'>
-            Die neue Ära modernen Webapp Developments
-          </h2>
           <Image src={techIllustration} alt='The new era of web development' />
         </div>
         <div className='mt-12 lg:col-span-2 lg:mt-0'>

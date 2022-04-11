@@ -6,6 +6,7 @@ import Layout from '@/components/layout/Layout';
 import PainPoints from '@/components/PainPoints';
 import Seo from '@/components/Seo';
 import Solutions from '@/components/Solutions';
+import Testimonials from '@/components/Testimonials';
 import TheProcess from '@/components/TheProcess';
 
 export default function HomePage() {
@@ -20,6 +21,7 @@ export default function HomePage() {
         <Authority />
         <TheProcess />
         <Solutions />
+        <Testimonials />
       </main>
     </Layout>
   );

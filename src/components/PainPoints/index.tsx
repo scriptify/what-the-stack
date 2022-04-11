@@ -12,7 +12,7 @@ const painPoints = [
     ),
   },
   { content: 'Implementieren von Features dauert ewig und ist umständlich?' },
-  // { content: 'Veralteter, ineffizienter Techstack mit vielen Problemen?' },
+  { content: 'Veralteter, ineffizienter Techstack mit vielen Problemen?' },
   {
     content:
       'Das Team verbringt viel Zeit damit, Build Tools Fehler zu beheben und DevOps zu tweaken?',
@@ -28,8 +28,8 @@ export default function PainPoints() {
           Kennst du das:
         </h2>
       </div> */}
-      <div className='mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8'>
-        <dl className='space-y-10 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-4 lg:gap-x-8'>
+      <div className='mx-auto py-16 px-4 sm:px-6 lg:px-8'>
+        <dl className='space-y-10 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-5 lg:gap-x-8'>
           {painPoints.map((painPoint, idx) => (
             <div key={idx} className='relative'>
               <dt>
