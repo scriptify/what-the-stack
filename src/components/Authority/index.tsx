@@ -36,8 +36,8 @@ export default function Authority() {
             <br />
             <br />
             Nun gebe ich mein Wissen weiter, und helfe dabei, den Jungle an
-            Technologien erfolgreich zu navigieren und den richtigen Techstack
-            zu wählen.
+            Technologien erfolgreich zu navigieren und den richtigen Technologie
+            Stack zu wählen.
           </p>
           {/* <div className='mt-8 overflow-hidden'>
             <dl className='-mx-8 -mt-8 flex flex-wrap'>

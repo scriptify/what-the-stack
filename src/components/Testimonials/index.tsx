@@ -38,7 +38,10 @@ const testimonials: TestimonialCardProps[] = [
 
 const Testimonials = () => {
   return (
-    <div>
+    <div className='mt-32'>
+      <h2 className='mb-8 text-center text-4xl font-black text-gray-900'>
+        Don&apos;t take my word for it!
+      </h2>
       {testimonials.map((testimonial, idx) => (
         <TestimonialCard key={idx} idx={idx} {...testimonial} />
       ))}

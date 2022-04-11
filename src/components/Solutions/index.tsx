@@ -18,7 +18,7 @@ const features = [
     name: <>Der Konkurrenz einen Schritt voraus</>,
     description: (
       <>
-        ..dank cutting-edge Technologien und optimierten Prozessen - werde zum
+        ...dank cutting-edge Technologien und optimierten Prozessen - werde zum
         Innovator Deiner Branche
       </>
     ),
