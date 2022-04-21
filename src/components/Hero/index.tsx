@@ -28,7 +28,6 @@ import logoSmall from '../../../public/images/logo_font_short.png';
 
 const navigation = [
   { name: 'Home', href: '#' },
-  { name: 'Impressum', href: '#' },
   { name: 'Blog', href: '#' },
   { name: 'Fullstack Safari 🌴', href: '#' },
 ];

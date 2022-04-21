@@ -25,7 +25,7 @@ export default function TestimonialCard({
   const direction = idx % 2 === 0 ? 'left' : 'right';
 
   const img = (
-    <div className='hidden lg:block lg:flex-shrink-0'>
+    <div key='pb' className='hidden lg:block lg:flex-shrink-0'>
       <div className='relative h-64 w-64 overflow-hidden rounded-full xl:h-80 xl:w-80'>
         <Image
           src={profilePicture}
@@ -43,7 +43,13 @@ export default function TestimonialCard({
   );
 
   const actualContent = (
-    <div className='relative lg:ml-10'>
+    <div
+      key='content'
+      className={clsx('relative', {
+        'lg:ml-10': direction === 'left',
+        'lg:mr-10': direction === 'right',
+      })}
+    >
       <svg
         className='absolute top-0 left-0 h-36 w-36 -translate-x-8 -translate-y-24 transform text-indigo-200 opacity-50'
         stroke='currentColor'
@@ -57,7 +63,7 @@ export default function TestimonialCard({
         />
       </svg>
       <blockquote className='relative'>
-        <div className='text-2xl font-medium leading-9 text-gray-900'>
+        <div className='text-justify text-lg text-gray-900'>
           <p>{content}</p>
         </div>
         <footer className='mt-8'>

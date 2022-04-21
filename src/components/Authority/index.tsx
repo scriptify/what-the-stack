@@ -25,11 +25,12 @@ export default function Authority() {
             </div>
           </div>
           <h2 className='mt-6 text-3xl font-extrabold text-gray-900 sm:text-4xl'>
-            Hallo! Ich bin Maximilian
+            Fullstack Software Developer mit {new Date().getFullYear() - 2016}+
+            Jahren Erfahrung.
           </h2>
           <p className='mt-6 text-lg text-gray-500'>
-            Ein Fullstack Software Developer mit{' '}
-            {new Date().getFullYear() - 2016}+ Jahren professioneller Erfahrung.
+            Hallo! Meine Name ist Maximilian.
+            <br />
             Ich habe zwei Tech Startups mitgegründet und vielen weiteren
             Unternehmen dabei geholfen, skalierbare React Anwendungen mit
             modernen Technologien zu entwickeln.
