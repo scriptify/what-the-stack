@@ -26,10 +26,15 @@ import {
 import logoLarge from '../../../public/images/logo_font_long.png';
 import logoSmall from '../../../public/images/logo_font_short.png';
 
-const navigation = [
-  { name: 'Home', href: '#' },
-  { name: 'Blog', href: '#' },
-  { name: 'Fullstack Safari 🌴', href: '#' },
+interface NavLink {
+  name: string;
+  href: string;
+}
+
+const navigation: NavLink[] = [
+  // { name: 'Home', href: '#' },
+  // { name: 'Blog 📚', href: '#' },
+  // { name: 'Fullstack Safari 🌴', href: '#' },
 ];
 
 export default function LandingHero() {
@@ -214,10 +219,12 @@ export default function LandingHero() {
           <div className='text-center'>
             <a href='#' className='inline-flex space-x-4'>
               <span className='rounded bg-indigo-50 px-2.5 py-1 text-xs font-semibold uppercase tracking-wide text-indigo-600'>
-                Neuer Artikel
+                Follow me
               </span>
               <span className='inline-flex items-center space-x-1 text-sm font-medium text-indigo-600'>
-                <span>Taming the beast: CSS Solutions for React</span>
+                <span>
+                  On LinkedIn für Neues rund um moderne Webapp Entwicklung
+                </span>
                 <ChevronRightIcon className='h-5 w-5' aria-hidden='true' />
               </span>
             </a>

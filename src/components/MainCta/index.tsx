@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 // import meImage from '../../../public/images/cta_image.png';
-import ctaImg from '../../../public/images/cta_image.png';
+import ctaImg from '../../../public/images/cta_illustration.png';
 
 export default function MainCta() {
   return (
@@ -42,6 +42,10 @@ export default function MainCta() {
               <p className='text-lg text-white'>
                 Dann lass uns herausfinden, wie ich auch Deinem Unternehmen
                 helfen kann, die Developer Produktivität zu optimieren!
+                <br />
+                <br />
+                Bring gerne jemanden aus dem Development Team mit, und wir
+                können bereits erste Probleme und mögliche Lösungen diskutieren.
               </p>
               <a
                 className='block w-full rounded-md border border-transparent bg-white py-3 px-5 text-center text-base font-medium text-indigo-700 shadow-md hover:bg-gray-50 sm:inline-block sm:w-auto'
