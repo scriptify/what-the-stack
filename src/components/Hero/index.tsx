@@ -23,6 +23,8 @@ import {
   RiMenuFill as MenuIcon,
 } from 'react-icons/ri';
 
+import { BOOKING_URL } from '@/data';
+
 import logoLarge from '../../../public/images/logo_font_long.png';
 import logoSmall from '../../../public/images/logo_font_short.png';
 
@@ -155,10 +157,12 @@ export default function LandingHero() {
               <div className='hidden md:absolute md:inset-y-0 md:right-0 md:flex md:items-center md:justify-end'>
                 <span className='inline-flex rounded-md shadow'>
                   <a
-                    href='#'
+                    href={BOOKING_URL}
+                    target='_blank'
                     className='inline-flex items-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white hover:bg-indigo-700'
+                    rel='noreferrer'
                   >
-                    Call buchen
+                    Erstgespräch buchen
                   </a>
                 </span>
               </div>
@@ -206,8 +210,10 @@ export default function LandingHero() {
                   ))}
                 </div>
                 <a
-                  href='#'
+                  href={BOOKING_URL}
+                  target='_blank'
                   className='block w-full bg-indigo-600 px-5 py-3 text-center font-medium text-white hover:bg-indigo-700'
+                  rel='noreferrer'
                 >
                   Call buchen
                 </a>
@@ -223,7 +229,7 @@ export default function LandingHero() {
               </span>
               <span className='inline-flex items-center space-x-1 text-sm font-medium text-indigo-600'>
                 <span>
-                  On LinkedIn für Neues rund um moderne Webapp Entwicklung
+                  On LinkedIn für News rund um moderne Webapp Entwicklung
                 </span>
                 <ChevronRightIcon className='h-5 w-5' aria-hidden='true' />
               </span>
@@ -248,10 +254,12 @@ export default function LandingHero() {
             <div className='mx-auto mt-5 max-w-md sm:flex sm:justify-center md:mt-8'>
               <div className='rounded-md shadow'>
                 <a
-                  href='#'
+                  href={BOOKING_URL}
+                  target='_blank'
                   className='flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 md:py-4 md:px-10 md:text-lg'
+                  rel='noreferrer'
                 >
-                  Gratis Call buchen
+                  Gratis Erstgespräch buchen
                 </a>
               </div>
               {/* <div className='mt-3 rounded-md shadow sm:mt-0 sm:ml-3'>

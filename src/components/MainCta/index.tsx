@@ -1,5 +1,7 @@
 import Image from 'next/image';
 
+import { BOOKING_URL } from '@/data';
+
 // import meImage from '../../../public/images/cta_image.png';
 import ctaImg from '../../../public/images/cta_illustration.png';
 
@@ -49,7 +51,9 @@ export default function MainCta() {
               </p>
               <a
                 className='block w-full rounded-md border border-transparent bg-white py-3 px-5 text-center text-base font-medium text-indigo-700 shadow-md hover:bg-gray-50 sm:inline-block sm:w-auto'
-                href='#'
+                href={BOOKING_URL}
+                target='_blank'
+                rel='noreferrer'
               >
                 Gratis 30min Call buchen
               </a>
