@@ -14,6 +14,7 @@ export default function Authority() {
             layout='fill'
             objectFit='contain'
             alt='Maximilian Torggler'
+            placeholder='blur'
           />
         </div>
       </div>

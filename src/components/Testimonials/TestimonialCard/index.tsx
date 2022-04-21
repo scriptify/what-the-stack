@@ -32,6 +32,7 @@ export default function TestimonialCard({
           alt={role}
           objectFit='cover'
           layout='fill'
+          placeholder='blur'
         />
       </div>
       {/* <img
@@ -75,6 +76,7 @@ export default function TestimonialCard({
                   alt={role}
                   objectFit='cover'
                   layout='fill'
+                  placeholder='blur'
                 />
               </div>
               {/* <img

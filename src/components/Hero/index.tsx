@@ -189,6 +189,7 @@ export default function LandingHero() {
                       src={logoSmall}
                       alt='what the stack'
                       className='h-8 w-auto'
+                      placeholder='blur'
                     />
                   </div>
                   <div className='-mr-2'>

@@ -17,7 +17,13 @@ const BeforeAfterCard: React.FC<Props> = ({ children, displayMode }) => {
           <XIcon className='h-full w-auto text-red-500' />
         )}
         {displayMode === 'after' && (
-          <Image src={logo} alt='' layout='fill' objectFit='contain' />
+          <Image
+            placeholder='blur'
+            src={logo}
+            alt=''
+            layout='fill'
+            objectFit='contain'
+          />
         )}
       </div>
       <p

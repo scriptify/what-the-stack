@@ -27,6 +27,7 @@ export default function MainCta() {
                     layout='fill'
                     objectFit='contain'
                     alt='Maximilian Torggler'
+                    placeholder='blur'
                   />
                 </div>
               </div>

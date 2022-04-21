@@ -60,7 +60,11 @@ export default function Solutions() {
       </h2>
       <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:px-8'>
         <div>
-          <Image src={techIllustration} alt='The new era of web development' />
+          <Image
+            placeholder='blur'
+            src={techIllustration}
+            alt='The new era of web development'
+          />
         </div>
         <div className='mt-12 lg:col-span-2 lg:mt-0'>
           <dl className='space-y-10 sm:grid sm:grid-flow-col sm:grid-cols-2 sm:grid-rows-3 sm:gap-x-6 sm:gap-y-10 sm:space-y-0 lg:gap-x-8'>
