@@ -51,7 +51,7 @@ const features = [
 
 export default function Solutions() {
   return (
-    <div className='mt-8 bg-white'>
+    <div className='mt-16 bg-white'>
       <h2 className='mb-8 text-center text-2xl font-black uppercase tracking-wide text-gray-900'>
         <span>Die neue Ära</span>
         <span className='block text-indigo-600'>

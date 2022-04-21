@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 // import meImage from '../../../public/images/cta_image.png';
-import ctaImg from '../../../public/images/success.png';
+import ctaImg from '../../../public/images/cta_image.png';
 
 export default function MainCta() {
   return (

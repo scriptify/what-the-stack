@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-/* This example requires Tailwind CSS v2.0+ */
 const navigation = {
   main: [
     { name: 'Home', href: '#' },
