@@ -96,7 +96,12 @@ export default function LandingHero() {
       <div className='relative pt-24 pb-16 sm:pb-24 lg:pb-16'>
         <main className='mx-auto mb-20 max-w-7xl px-4 sm:mt-24 lg:mb-0'>
           <div className='mt-8 text-center lg:mt-0'>
-            <a href='#' className='inline-flex space-x-1 lg:space-x-4'>
+            <a
+              target='_blank'
+              href='https://www.linkedin.com/in/maximilian-torggler-a87051170/'
+              className='inline-flex space-x-1 lg:space-x-4'
+              rel='noreferrer'
+            >
               <span className='rounded bg-indigo-50 px-2.5 py-1 text-xs font-semibold uppercase tracking-wide text-indigo-600'>
                 Follow me
               </span>

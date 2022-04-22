@@ -26,7 +26,7 @@ class MyDocument extends Document {
           <script
             defer
             data-domain='what-the-stack.com'
-            src='https://plausible.io/js/plausible.js'
+            src='https://plausible.io/js/script.outbound-links.js'
           ></script>
         </Head>
         <body>
