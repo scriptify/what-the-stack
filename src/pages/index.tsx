@@ -2,7 +2,6 @@ import * as React from 'react';
 
 import Authority from '@/components/Authority';
 import BeforeAfter from '@/components/BeforeAfter';
-import Footer from '@/components/Footer';
 import LandingHero from '@/components/Hero';
 import Layout from '@/components/layout/Layout';
 import MainCta from '@/components/MainCta';
@@ -27,7 +26,6 @@ export default function HomePage() {
         <BeforeAfter />
         <Testimonials />
         <MainCta />
-        <Footer />
       </main>
     </Layout>
   );
