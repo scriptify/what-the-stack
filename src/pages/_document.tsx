@@ -23,6 +23,11 @@ class MyDocument extends Document {
             type='font/woff2'
             crossOrigin='anonymous'
           />
+          <script
+            defer
+            data-domain='what-the-stack.com'
+            src='https://plausible.io/js/plausible.js'
+          ></script>
         </Head>
         <body>
           <Main />

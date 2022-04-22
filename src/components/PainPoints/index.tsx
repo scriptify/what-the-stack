@@ -52,7 +52,7 @@ export default function PainPoints() {
         </dl>
         <div className='mx-auto mt-16 max-w-3xl text-center'>
           <h2 className='text-3xl font-extrabold text-gray-900'>
-            Dann kann ich helfen
+            Dann kann ich helfen.
           </h2>
           <p className='mt-2 text-lg text-gray-500'>
             Lasst uns zusammen euren Entwicklungsprozess wieder auf

@@ -89,7 +89,12 @@ export default function TestimonialCard({
               <div className='text-base font-medium text-gray-900'>{name}</div>
               <div className='text-base font-medium text-indigo-600'>
                 {role},{' '}
-                <a className='underline' href={company.url}>
+                <a
+                  target='_blank'
+                  className='underline'
+                  href={company.url}
+                  rel='noreferrer'
+                >
                   {company.name}
                 </a>
               </div>

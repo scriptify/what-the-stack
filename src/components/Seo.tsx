@@ -1,19 +1,17 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
-import { openGraph } from '@/lib/helper';
-
 const defaultMeta = {
-  title: 'What The Stack',
+  title: 'What The Stack - Web Consulting',
   siteName: 'What The Stack',
   description:
-    'A starter for Next.js, Tailwind CSS, and TypeScript with Absolute Import, Seo, Link component, pre-configured with Husky',
+    'Moderne React Softwarearchitektur für dein A-Team: Schluss mit ewig langen Release Cycles, umständlichen Developer Tools und klobiger User Experience! Sorge dafür, dass sich Dein Development Team auf das fokussiert, was es am besten kann: Shippen von neuen Features.',
   /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
-  url: 'https://tsnext-tw.thcl.dev',
+  url: 'https://what-the-stack.com',
   type: 'website',
   robots: 'follow, index',
   /** No need to be filled, will be populated with openGraph function */
-  image: '',
+  image: 'https://what-the-stack.com/images/og_image.png',
 };
 
 type SeoProps = {
@@ -27,17 +25,9 @@ export default function Seo(props: SeoProps) {
     ...defaultMeta,
     ...props,
   };
-  meta['title'] = props.templateTitle
+  meta.title = props.templateTitle
     ? `${props.templateTitle} | ${meta.siteName}`
     : meta.title;
-
-  // Use siteName if there is templateTitle
-  // but show full title if there is none
-  meta['image'] = openGraph({
-    description: meta.description,
-    siteName: props.templateTitle ? meta.siteName : meta.title,
-    templateTitle: props.templateTitle,
-  });
 
   return (
     <Head>
@@ -78,12 +68,12 @@ export default function Seo(props: SeoProps) {
       {favicons.map((linkProps) => (
         <link key={linkProps.href} {...linkProps} />
       ))}
-      <meta name='msapplication-TileColor' content='#ffffff' />
+      <meta name='msapplication-TileColor' content='#4F46E5' />
       <meta
         name='msapplication-TileImage'
         content='/favicon/ms-icon-144x144.png'
       />
-      <meta name='theme-color' content='#ffffff' />
+      <meta name='theme-color' content='#4F46E5' />
     </Head>
   );
 }
@@ -95,7 +85,6 @@ type Favicons = {
   type?: string;
 };
 
-// !STARTERCONF this is the default favicon, you can generate your own from https://www.favicon-generator.org/ then replace the whole /public/favicon folder
 const favicons: Array<Favicons> = [
   {
     rel: 'apple-touch-icon',

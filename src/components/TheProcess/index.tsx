@@ -10,7 +10,7 @@ import {
 
 const features = [
   {
-    name: 'Analyse Call',
+    name: 'Analysecall',
     description: 'Erfassen des Status Quo und klare Zieldefinition',
     icon: CallIcon,
   },
@@ -29,7 +29,7 @@ const features = [
   {
     name: 'Legacy Migration',
     description:
-      'Wenn zutreffend: Ausarbeiten eines klaren Migrations-Pfads von Legacy Applikationen.',
+      'Wenn zutreffend: Ausarbeiten eines klaren Migrations-Pfads von Legacy Applikationen',
     icon: LegacyCodeIcon,
   },
   {
@@ -41,7 +41,7 @@ const features = [
   {
     name: 'Performance Evaluation',
     description:
-      'Ebenfall inklusive: 30min Performance Evaluation Call jede Woche, für einen Monat ab Handoff.',
+      'Ebenfalls inklusive: 30min Performance Evaluation Call jede Woche, für einen Monat ab Handoff',
     icon: PerformanceIcon,
   },
 ];
@@ -58,9 +58,9 @@ export default function TheProcess() {
         </p>
         <p className='mx-auto mt-5 max-w-prose text-xl text-gray-500'>
           Hier wird nicht lange um den heißen Brei geredet. Was ich anbiete, ist
-          keine klassische Zweitagesschulung oder ein Video basierter
-          Onlinekurs. Ich führe direkt starke Engineering Standards mit einer
-          fertig vorbereiteten Codebase und ausführlicher Dokumentation mit
+          keine klassische Zweitagesschulung oder ein videobasierter Onlinekurs.
+          Ich führe direkt starke Engineering Standards mit einer fertig
+          vorbereiteten Codebase und ausführlicher Dokumentation mit
           Codebeispielen im Unternehmen ein.
         </p>
         <div className='mt-12'>

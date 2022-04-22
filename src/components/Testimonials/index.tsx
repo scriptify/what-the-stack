@@ -7,7 +7,7 @@ import jim from '../../../public/images/jim.jpg';
 import peter from '../../../public/images/peter.jpg';
 
 const HighlightText = ({ children }: { children: string }) => (
-  <span className='font-medium underline decoration-wavy'>{children}</span>
+  <span className='font-medium'>{children}</span>
 );
 
 const testimonials: TestimonialCardProps[] = [
@@ -41,8 +41,8 @@ const testimonials: TestimonialCardProps[] = [
         abzuschließen.
         <br />
         <br />
-        Maxi ist super informiert und up to Date, überhaupt in der Welt der
-        Web-Anwendungen. Keep up the good work!
+        Maximilian ist super informiert und up to date, überhaupt in der Welt
+        der Web-Anwendungen. Keep up the good work!
       </>
     ),
   },
@@ -66,8 +66,8 @@ const testimonials: TestimonialCardProps[] = [
         Developer Tools aufgesetzt hat, konnten wir problemlos skalieren.
         <br />
         <br />
-        Unsere Kunden waren überrauscht, wie schnell wir neue Features auf den
-        Markt bringen konnten.
+        Unsere Kunden waren überrascht, wie schnell wir neue Features auf den
+        Markt bringen konnten!
       </>
     ),
   },
@@ -109,13 +109,25 @@ const testimonials: TestimonialCardProps[] = [
     content: (
       <>
         <HighlightText>
-          Unser Realease Cycle dauerte teilweise ewig
+          Unsere Codebase wurde über die Jahre immer unübersichtlicher
         </HighlightText>{' '}
-        und das Bauen neuer Features brauchte endlos lang.
+        und sehr schwer zu verwalten. Des Weiteren kamen neue Anforderungen von
+        Kunden dazu, welche für uns mit dem alten Stack nie zeitnah umsetzbar
+        gewesen wären.
+        <br />
         <br />
         Nach der Zusammenarbeit mit Maxi konnten ich und mein Team viel
-        schneller Arbeiten, auch weil wir genau in dieser Zeit angefangen haben,
+        schneller arbeiten, auch weil wir genau in dieser Zeit angefangen haben,
         mit Scrum Sprints zu arbeiten. Da passte die neue Codebase perfekt dazu.
+        <br />
+        <br />
+        Die Developer-Experience hat sich drastisch verbessert. Zu Beginn haben
+        wir uns einleben müssen mit dem React Framework, dies ist aber bei
+        Veränderungen immer der Fall.
+        <br />
+        <br />
+        Nun haben wir einen erheblich übersichtlicheren und strukturierteren
+        Code und viele alt-lastige Plagen bleiben uns nun erspart.
       </>
     ),
   },

@@ -6,7 +6,7 @@ import meImage from '../../../public/images/me.png';
 
 export default function Authority() {
   return (
-    <div className='relative mt-24 bg-white'>
+    <div className='relative mt-8 bg-white lg:mt-24'>
       <div className='m:h-72 h-56 lg:absolute lg:left-0 lg:h-full lg:w-1/2'>
         <div className='relative h-full w-full'>
           <Image
@@ -30,7 +30,7 @@ export default function Authority() {
             Jahren Erfahrung.
           </h2>
           <p className='mt-6 text-lg text-gray-500'>
-            Hallo! Meine Name ist Maximilian.
+            Hallo! Mein Name ist Maximilian.
             <br />
             Ich habe zwei Tech Startups mitgegründet und vielen weiteren
             Unternehmen dabei geholfen, skalierbare React Anwendungen mit
@@ -38,8 +38,8 @@ export default function Authority() {
             <br />
             <br />
             Nun gebe ich mein Wissen weiter, und helfe dabei, den Jungle an
-            Technologien erfolgreich zu navigieren und den richtigen Technologie
-            Stack zu wählen.
+            Technologien erfolgreich zu navigieren und den richtigen Stack zu
+            wählen.
           </p>
           {/* <div className='mt-8 overflow-hidden'>
             <dl className='-mx-8 -mt-8 flex flex-wrap'>

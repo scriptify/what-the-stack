@@ -9,7 +9,7 @@ import arrowMobile from '../../../public/images/arrow_mobile.png';
 const transformations = [
   {
     before: 'Mit jedem neuen Feature steigt der Zeitaufwand',
-    after: 'Nahezu Linearer Implementations-Aufwand',
+    after: 'Nahezu konstant bleibender Implementations-Aufwand',
   },
   {
     before:
