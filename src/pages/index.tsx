@@ -11,6 +11,17 @@ import Solutions from '@/components/Solutions';
 import Testimonials from '@/components/Testimonials';
 import TheProcess from '@/components/TheProcess';
 
+// export const getStaticProps: GetStaticProps<StaticProps> = async (context) => {
+//   const pageData = await getPageData();
+//   console.log({ pageData });
+
+//   return {
+//     props: {
+//       headline: 'Hello',
+//     },
+//   };
+// };
+
 export default function HomePage() {
   return (
     <Layout>

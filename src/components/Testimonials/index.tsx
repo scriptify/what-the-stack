@@ -35,10 +35,9 @@ const testimonials: TestimonialCardProps[] = [
         gesteigert.
         <br />
         <br />
-        Die Zusammenarbeit hat uns viel Zeit und Komplikationen gespart. Ohne
+        Die Zusammenarbeit hat uns viel Zeit und Komplikationen erspart. Ohne
         die externe Erfahrung und dem Knowhow hätten wir nicht das Zeug gehabt,
-        überhaupt eine solche Migration zu starten geschweige denn
-        abzuschließen.
+        überhaupt eine solche Migration zu starten.
         <br />
         <br />
         Maximilian ist super informiert und up to date, überhaupt in der Welt
