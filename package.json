@@ -17,9 +17,11 @@
     "release": "standard-version",
     "push-release": "git push --follow-tags origin main",
     "postbuild": "next-sitemap",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "commit": "commit"
   },
   "dependencies": {
+    "@commitlint/prompt-cli": "^16.2.4",
     "@headlessui/react": "^1.5.0",
     "@notionhq/client": "^1.0.4",
     "@tailwindcss/aspect-ratio": "^0.4.0",
