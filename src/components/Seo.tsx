@@ -5,7 +5,7 @@ const defaultMeta = {
   title: 'What The Stack - Web Consulting',
   siteName: 'What The Stack',
   description:
-    'Moderne React Softwarearchitektur für dein A-Team: Schluss mit ewig langen Release Cycles, umständlichen Developer Tools und klobiger User Experience! Sorge dafür, dass sich Dein Development Team auf das fokussiert, was es am besten kann: Shippen von neuen Features.',
+    'Mit modernen Developer Tools die Produktivität steigern: Schluss mit ewig langen Release Cycles, umständlichen Developer Tooling und klobiger User Experience! Sorge dafür, dass sich Dein Dev-Team auf das fokussiert, was es am besten kann: Shippen von neuen Features.',
   /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
   url: 'https://what-the-stack.com',
   type: 'website',

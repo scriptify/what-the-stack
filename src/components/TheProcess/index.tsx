@@ -54,7 +54,7 @@ export default function TheProcess() {
           So funktioniert&apos;s
         </h2>
         <p className='mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl'>
-          In zwei Wochen zum perfekten React Techstack
+          In zwei Wochen zum perfekten TypeScript Techstack
         </p>
         <p className='mx-auto mt-5 max-w-prose text-xl text-gray-500'>
           Hier wird nicht lange um den heißen Brei geredet. Was ich anbiete, ist
